@@ -1,0 +1,69 @@
+body {
+    margin: 0 auto;
+    background-color: #181818;
+}  
+
+h2 {
+    color: #ffffff;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.app_header {
+    height: 50px;
+    background-color: #242424;
+}
+
+.header_title {
+    color: #f6bd40;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.playlist {
+    padding: 30px;
+    margin-top: 40px;
+    background-color: #282828;
+}
+
+.container_videos {
+    display: flex;
+    gap: 5px;
+}
+
+.video {
+    width: 352px;
+    height: 252px;
+}
+
+.header_container {
+    max-width: 540px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tracks_container {
+    margin-top: 20px;
+}
+
+.track {
+    padding: 10px;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    background-color: #242424;
+}
