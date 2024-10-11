@@ -77,7 +77,7 @@ const mainElement = document.querySelector(".main");
 // отрисовка приложения
 PlaylistComponent(playlists, mainElement);
 
-// функция создания элементов
+// функции создания элементов
 function createElement(tag, classes = [], attributes = {}, textContent = "") {
     const element = document.createElement(tag);
     if (classes.length) {
@@ -125,9 +125,6 @@ function HeaderVideoContainer(title) {
     const element = createElement('header', ['header_video'], {}, title)
     return element;
 };
-
-
-
 function PlaylistComponent(inputPlaylists, main) {
     inputPlaylists.forEach((playlist) => {
         const container = createElement('section', ['playlist']);
@@ -136,7 +133,6 @@ function PlaylistComponent(inputPlaylists, main) {
         main.append(container)
     });
 };
-
 function VideoComponent(inputPlaylist) {
     // создаем контейнер для всех видео плейлиста
     const element = createElement('div', ['container_videos']);
